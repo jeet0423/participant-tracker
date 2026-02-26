@@ -24,11 +24,13 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
       
-      - name: Build Debug Bundle
+      - name: Build Debug APK
         run: ./gradlew assembleDebug
       
       - name: Build Release Bundle
-        run: ./gradlew bundleRelease
+        run: |
+          ./gradlew clean
+          ./gradlew bundleRelease
       
       - name: Upload Debug APK
         uses: actions/upload-artifact@v4
