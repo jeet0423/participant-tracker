@@ -27,11 +27,8 @@ jobs:
       - name: Build Release Bundle
         run: ./gradlew bundleRelease
       
-      - name: Find bundle file
-        run: find app/build -name "*.aab" -type f
-      
       - name: Upload Release Bundle
         uses: actions/upload-artifact@v4
         with:
           name: app-release-bundle.aab
-          path: app/build/outputs/bundle/release/app-release-bundle.aab
+          path: app/build/outputs/bundle/release/app-release.aab
