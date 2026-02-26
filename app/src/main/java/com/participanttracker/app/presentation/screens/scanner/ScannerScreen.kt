@@ -8,8 +8,11 @@ import androidx.camera.core.Preview
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.camera.view.PreviewView
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.height
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material3.*
@@ -88,7 +91,7 @@ fun PermissionRequest(onRequestPermission: () -> Unit) {
                 text = "Camera permission is required to scan QR codes",
                 style = MaterialTheme.typography.bodyLarge
             )
-            Spacer(modifier = Modifier.padding(16.dp))
+            Spacer(modifier = Modifier.height(16.dp))
             Button(onClick = onRequestPermission) {
                 Text("Grant Permission")
             }
