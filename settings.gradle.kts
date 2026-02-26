@@ -15,4 +15,4 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "ParticipantTracker"
-include ':app'
+include(":app")
