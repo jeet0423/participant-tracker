@@ -1,0 +1,84 @@
+{
+  "participants": [
+    {
+      "id": "P001",
+      "name": "John Smith",
+      "event": "Marathon 2024",
+      "category": "Elite",
+      "bibNumber": "101",
+      "kitCollected": true
+    },
+    {
+      "id": "P002",
+      "name": "Sarah Johnson",
+      "event": "Marathon 2024",
+      "category": "Open",
+      "bibNumber": "102",
+      "kitCollected": true
+    },
+    {
+      "id": "P003",
+      "name": "Mike Williams",
+      "event": "Triathlon 2024",
+      "category": "Pro",
+      "bibNumber": "201",
+      "kitCollected": false
+    },
+    {
+      "id": "P004",
+      "name": "Emily Brown",
+      "event": "Marathon 2024",
+      "category": "Amateur",
+      "bibNumber": "103",
+      "kitCollected": true
+    },
+    {
+      "id": "P005",
+      "name": "David Miller",
+      "event": "Cycling Tour",
+      "category": "Elite",
+      "bibNumber": "301",
+      "kitCollected": false
+    },
+    {
+      "id": "P006",
+      "name": "Lisa Davis",
+      "event": "Triathlon 2024",
+      "category": "Open",
+      "bibNumber": "202",
+      "kitCollected": true
+    },
+    {
+      "id": "P007",
+      "name": "James Wilson",
+      "event": "Marathon 2024",
+      "category": "Veterans",
+      "bibNumber": "104",
+      "kitCollected": true
+    },
+    {
+      "id": "P008",
+      "name": "Anna Taylor",
+      "event": "Cycling Tour",
+      "category": "Amateur",
+      "bibNumber": "302",
+      "kitCollected": false
+    },
+    {
+      "id": "P009",
+      "name": "Robert Anderson",
+      "event": "Triathlon 2024",
+      "category": "Elite",
+      "bibNumber": "203",
+      "kitCollected": true
+    },
+    {
+      "id": "P010",
+      "name": "Jennifer Martinez",
+      "event": "Marathon 2024",
+      "category": "Open",
+      "bibNumber": "105",
+      "kitCollected": true
+    }
+  ]
+}
