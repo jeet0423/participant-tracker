@@ -2,8 +2,6 @@ package com.participanttracker.app.presentation.screens.home
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.QrCodeScanner
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -15,7 +13,6 @@ import androidx.hilt.navigation.compose.hiltViewModel
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun HomeScreen(
-    onScanQR: () -> Unit,
     viewModel: HomeViewModel = hiltViewModel()
 ) {
     val uiState by viewModel.uiState.collectAsState()
@@ -49,30 +46,12 @@ fun HomeScreen(
 
             Spacer(modifier = Modifier.height(16.dp))
 
-            Row(
+            Button(
+                onClick = viewModel::searchParticipant,
                 modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.spacedBy(8.dp)
+                enabled = !uiState.isLoading
             ) {
-                Button(
-                    onClick = viewModel::searchParticipant,
-                    modifier = Modifier.weight(1f),
-                    enabled = !uiState.isLoading
-                ) {
-                    Text("Search")
-                }
-
-                OutlinedButton(
-                    onClick = onScanQR,
-                    modifier = Modifier.weight(1f)
-                ) {
-                    Icon(
-                        imageVector = Icons.Default.QrCodeScanner,
-                        contentDescription = "Scan QR",
-                        modifier = Modifier.size(18.dp)
-                    )
-                    Spacer(modifier = Modifier.width(4.dp))
-                    Text("Scan QR")
-                }
+                Text("Search")
             }
 
             if (uiState.isLoading) {
