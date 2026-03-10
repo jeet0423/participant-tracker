@@ -44,7 +44,7 @@ fun SplashScreen(navController: NavController) {
         contentAlignment = Alignment.Center
     ) {
         Text(
-            text = "Participant Tracker",
+            text = "Participant Lookup",
             style = MaterialTheme.typography.headlineLarge,
             color = MaterialTheme.colorScheme.onPrimary,
             modifier = Modifier.alpha(alpha.value)
